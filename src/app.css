@@ -394,9 +394,8 @@ footer {
         text-align: center;
     }
 
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
+    nav {
+        display: none;
     }
 
     .section-title {
