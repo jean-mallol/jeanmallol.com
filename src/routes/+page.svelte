@@ -36,11 +36,10 @@
 			observer.observe(el);
 		});
 
-		// Add some dynamic effects
+		// Subtle parallax effect for header
 		window.addEventListener('scroll', () => {
 			const scrolled = window.pageYOffset;
 			
-			// Subtle parallax effect for header background only
 			const header = document.querySelector('header');
 			if (header && scrolled < window.innerHeight) {
 				header.style.transform = `translateY(${scrolled * 0.2}px)`;
@@ -98,7 +97,7 @@
 			</div>
 		</div>
 		<div class="fade-in" style="margin-top: 60px;">
-			<p style="font-size: 1.1rem; text-align: center; color: #666;">J'ai eu l'opportunité de développer des outils innovants et de former des équipes dans des groupes de premier plan comme <strong>Samsung, Stellantis, Gifi, AFD, Greenpeace</strong>, ainsi que pour des institutions publiques majeures comme les Tribunaux de Commerce de France.</p>
+			<p style="font-size: 1.1rem; text-align: center; color: #666;">J'ai eu l'opportunité de développer des outils innovants et de former des équipes dans des groupes de premier plan comme <strong>Samsung, Stellantis, AFD, Greenpeace, Blablacar</strong>, ainsi que pour des institutions publiques majeures comme les Tribunaux de Commerce de France.</p>
 		</div>
 	</div>
 </section>
@@ -107,17 +106,17 @@
 	<div class="container">
 		<h2 class="section-title fade-in">Nos Prestations</h2>
 		<div class="services-grid">
-			<div class="service-card fade-in">
+			<div class="service-card fade-in card-3d">
 				<div class="service-icon">⚡</div>
 				<h3 class="service-title">Développement & Intégration de Solutions IA</h3>
 				<p class="service-description">Prototypage rapide, développement de solutions personnalisées (chatbots, systèmes d'aide à la décision, automatisation) et intégration aux systèmes existants.</p>
 			</div>
-			<div class="service-card fade-in">
+			<div class="service-card fade-in card-3d">
 				<div class="service-icon">🎓</div>
 				<h3 class="service-title">Formations IA Sur-Mesure</h3>
 				<p class="service-description">Montée en compétence ciblée avec des formations 100% adaptées à votre secteur, vos équipes et vos objectifs spécifiques. Approche pragmatique avec ateliers pratiques.</p>
 			</div>
-			<div class="service-card fade-in">
+			<div class="service-card fade-in card-3d">
 				<div class="service-icon">🎯</div>
 				<h3 class="service-title">Accompagnement Stratégique</h3>
 				<p class="service-description">Diagnostic, identification d'opportunités, cadrage de projets et feuille de route. Conseils sur les évolutions technologiques et meilleures pratiques.</p>
