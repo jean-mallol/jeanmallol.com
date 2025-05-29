@@ -163,7 +163,7 @@
 		<h2 class="section-title fade-in">Témoignages Clients</h2>
 		<div class="testimonial-grid">
 			<div class="testimonial fade-in">
-				<p class="testimonial-text">Grâce à la formation et à l'accompagnement pertinent de Jean, nous avons pu déployer un chatbot en moins d'un mois. Cela a permis de réduire notre charge de travail au service client de 40%, tout en améliorant la satisfaction de nos utilisateurs.</p>
+				<p class="testimonial-text">Grâce à la formation et à son accompagnement pertinent, nous avons pu déployer un chatbot en moins d'un mois. Cela a permis de réduire notre charge de travail au service client de 40%, tout en améliorant la satisfaction de nos utilisateurs.</p>
 				<p class="testimonial-author">— Responsable Service Client</p>
 			</div>
 			<div class="testimonial fade-in">
@@ -179,7 +179,7 @@
 		<h2 class="section-title fade-in">Prêt à Transformer Votre Entreprise ?</h2>
 		<div class="contact-content fade-in">
 			<p class="contact-text">L'intelligence artificielle est la nouvelle frontière de la productivité. Ensemble, faisons-en un atout majeur de votre stratégie.</p>
-			<a href="mailto:contact@jeanmallol.com" class="contact-button">Discutons de votre projet</a>
+			<a href="mailto:jean.ml.solutions@gmail.com" class="contact-button">Discutons de votre projet</a>
 		</div>
 	</div>
 </section>
