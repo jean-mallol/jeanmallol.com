@@ -109,17 +109,17 @@
 			<div class="service-card fade-in card-3d">
 				<div class="service-icon">⚡</div>
 				<h3 class="service-title">Développement & Intégration de Solutions IA</h3>
-				<p class="service-description">Prototypage rapide, développement de solutions personnalisées (chatbots, systèmes d'aide à la décision, automatisation) et intégration aux systèmes existants.</p>
+				<p class="service-description">Prototypage rapide, développement de solutions personnalisées (chatbots, systèmes d'aide à la décision, automatisation, RAGs, APIs, MCPs, fine tuning) et intégration aux systèmes existants.</p>
 			</div>
 			<div class="service-card fade-in card-3d">
 				<div class="service-icon">🎓</div>
 				<h3 class="service-title">Formations IA Sur-Mesure</h3>
-				<p class="service-description">Montée en compétence ciblée avec des formations 100% adaptées à votre secteur, vos équipes et vos objectifs spécifiques. Approche pragmatique avec ateliers pratiques.</p>
+				<p class="service-description">Montée en compétence ciblée avec des formations 100% adaptées à votre secteur, vos équipes, vos objectifs spécifiques et votre profil (décideurs, techniciens, developpeurs, consultants...). Approche pragmatique avec ateliers pratiques.</p>
 			</div>
 			<div class="service-card fade-in card-3d">
 				<div class="service-icon">🎯</div>
 				<h3 class="service-title">Accompagnement Stratégique</h3>
-				<p class="service-description">Diagnostic, identification d'opportunités, cadrage de projets et feuille de route. Conseils sur les évolutions technologiques et meilleures pratiques.</p>
+				<p class="service-description">Diagnostic, identification d'opportunités, cadrage de projets et feuille de route. Conseils sur les évolutions technologiques et meilleures pratiques</p>
 			</div>
 		</div>
 	</div>
