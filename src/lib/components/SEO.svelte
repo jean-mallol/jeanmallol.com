@@ -1,7 +1,7 @@
 <script lang="ts">
 	export let title: string;
 	export let description: string;
-	export let image: string = '/og-image.jpg';
+	export let image: string = '/og-image.svg';
 	export let url: string = 'https://jeanmallol.com';
 </script>
 

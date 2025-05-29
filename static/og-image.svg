@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f9d089;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f5c878;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cardGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.95" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0.9" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+  
+  <!-- Pattern overlay -->
+  <g opacity="0.1">
+    <circle cx="100" cy="100" r="20" fill="#1a1a1a"/>
+    <circle cx="300" cy="180" r="15" fill="#1a1a1a"/>
+    <circle cx="500" cy="120" r="10" fill="#1a1a1a"/>
+    <circle cx="800" cy="200" r="25" fill="#1a1a1a"/>
+    <circle cx="1000" cy="150" r="18" fill="#1a1a1a"/>
+    <circle cx="1100" cy="80" r="12" fill="#1a1a1a"/>
+    <circle cx="200" cy="400" r="22" fill="#1a1a1a"/>
+    <circle cx="600" cy="450" r="16" fill="#1a1a1a"/>
+    <circle cx="900" cy="500" r="14" fill="#1a1a1a"/>
+  </g>
+  
+  <!-- Main content card -->
+  <rect x="80" y="120" width="1040" height="390" rx="30" fill="url(#cardGradient)" stroke="#1a1a1a" stroke-width="2"/>
+  
+  <!-- AI Brain icon -->
+  <g transform="translate(120, 180)">
+    <circle cx="40" cy="40" r="35" fill="none" stroke="#1a1a1a" stroke-width="3"/>
+    <!-- Brain pattern -->
+    <path d="M20 25 Q30 15 40 25 Q50 15 60 25 M20 35 Q30 45 40 35 Q50 45 60 35 M20 45 Q30 35 40 45 Q50 35 60 45 M20 55 Q30 65 40 55 Q50 65 60 55" 
+          fill="none" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round"/>
+    <!-- Neural nodes -->
+    <circle cx="25" cy="30" r="3" fill="#1a1a1a"/>
+    <circle cx="40" cy="25" r="3" fill="#1a1a1a"/>
+    <circle cx="55" cy="30" r="3" fill="#1a1a1a"/>
+    <circle cx="30" cy="45" r="3" fill="#1a1a1a"/>
+    <circle cx="50" cy="45" r="3" fill="#1a1a1a"/>
+    <circle cx="40" cy="55" r="3" fill="#1a1a1a"/>
+    <!-- Connections -->
+    <line x1="25" y1="30" x2="40" y2="25" stroke="#1a1a1a" stroke-width="1.5" opacity="0.6"/>
+    <line x1="40" y1="25" x2="55" y2="30" stroke="#1a1a1a" stroke-width="1.5" opacity="0.6"/>
+    <line x1="25" y1="30" x2="30" y2="45" stroke="#1a1a1a" stroke-width="1.5" opacity="0.6"/>
+    <line x1="55" y1="30" x2="50" y2="45" stroke="#1a1a1a" stroke-width="1.5" opacity="0.6"/>
+    <line x1="30" y1="45" x2="40" y2="55" stroke="#1a1a1a" stroke-width="1.5" opacity="0.6"/>
+    <line x1="50" y1="45" x2="40" y2="55" stroke="#1a1a1a" stroke-width="1.5" opacity="0.6"/>
+  </g>
+  
+  <!-- Title -->
+  <text x="240" y="240" font-family="Inter, Arial, sans-serif" font-size="48" font-weight="800" fill="#1a1a1a">Jean Mallol</text>
+  
+  <!-- Subtitle -->
+  <text x="240" y="290" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="600" fill="#333">Expert IA &amp; Formateur</text>
+  
+  <!-- Description -->
+  <text x="240" y="340" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="400" fill="#555">Développement de Solutions IA</text>
+  <text x="240" y="375" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="400" fill="#555">Formations Sur-Mesure</text>
+  <text x="240" y="410" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="400" fill="#555">Accompagnement Stratégique</text>
+  
+  <!-- Website -->
+  <text x="240" y="460" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="500" fill="#666">jeanmallol.com</text>
+  
+  <!-- Decorative elements -->
+  <g transform="translate(950, 200)" opacity="0.3">
+    <circle cx="0" cy="0" r="80" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+    <circle cx="0" cy="0" r="60" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="40" fill="none" stroke="#1a1a1a" stroke-width="1"/>
+  </g>
+</svg>
