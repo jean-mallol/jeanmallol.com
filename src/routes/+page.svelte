@@ -109,7 +109,7 @@
 			<div class="service-card fade-in card-3d">
 				<div class="service-icon">⚡</div>
 				<h3 class="service-title">Développement & Intégration de Solutions IA</h3>
-				<p class="service-description">Prototypage rapide, développement de solutions personnalisées (chatbots, systèmes d'aide à la décision, automatisation, RAG, API, MCP, fine tuning) et intégration aux systèmes existants.</p>
+				<p class="service-description">Prototypage rapide, développement de solutions personnalisées (chatbots, systèmes d'aide à la décision, automatisation, agents, RAG, API, MCP, fine tuning) et intégration aux systèmes existants.</p>
 			</div>
 			<div class="service-card fade-in card-3d">
 				<div class="service-icon">🎓</div>
