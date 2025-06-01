@@ -2,6 +2,8 @@
 	import { onMount } from 'svelte';
 	import SEO from '$lib/components/SEO.svelte';
 	import FadeIn from '$lib/components/FadeIn.svelte';
+	import LanguageSelector from '$lib/components/LanguageSelector.svelte';
+	import { t } from '$lib/i18n';
 	import type { PageData } from './$types';
 	
 	export let data: PageData;
@@ -54,72 +56,73 @@
 	<div class="container">
 		<div class="hero">
 			<h1>Jean Mallol</h1>
-			<p class="subtitle">Expert IA & Formateur - Accélérez votre transformation IA : Développement de Solutions, Formations Sur-Mesure et Accompagnement Stratégique</p>
-			<a href="#contact" class="cta-button">Commencer votre transformation IA</a>
+			<p class="subtitle">{$t('heroSubtitle')}</p>
+			<a href="#contact" class="cta-button">{$t('heroCta')}</a>
 		</div>
 	</div>
 </header>
 
 <nav>
-	<div class="container">
+	<div class="container nav-container">
 		<ul>
-			<li><a href="#about">À propos</a></li>
-			<li><a href="#services">Services</a></li>
-			<li><a href="#benefits">Bénéfices</a></li>
-			<li><a href="#testimonials">Témoignages</a></li>
-			<li><a href="#contact">Contact</a></li>
+			<li><a href="#about">{$t('navAbout')}</a></li>
+			<li><a href="#services">{$t('navServices')}</a></li>
+			<li><a href="#benefits">{$t('navBenefits')}</a></li>
+			<li><a href="#testimonials">{$t('navTestimonials')}</a></li>
+			<li><a href="#contact">{$t('navContact')}</a></li>
 		</ul>
+		<LanguageSelector />
 	</div>
 </nav>
 
 <section id="about" class="about">
 	<div class="container">
-		<h2 class="section-title fade-in">Qui suis-je ?</h2>
+		<h2 class="section-title fade-in">{$t('aboutTitle')}</h2>
 		<div class="about-content">
 			<div class="about-text fade-in">
-				<p>Avec plus de 10 ans d'expérience en développement de solutions IA et data et en accompagnement d'entreprises dans leur transformation numérique, j'aide aujourd'hui les organisations à concrétiser leur potentiel grâce à l'intelligence artificielle.</p>
+				<p>{$t('aboutText1')}</p>
 				
-				<p>Mon expertise s'étend de l'implémentation technique à la formation des équipes, couvrant divers secteurs industriels et de services, avec un accent sur l'efficacité opérationnelle, l'innovation et la génération de valeur.</p>
+				<p>{$t('aboutText2')}</p>
 			</div>
 			<div class="stats fade-in">
 				<div class="stat-item">
 					<div class="stat-number">10+</div>
-					<div class="stat-label">Années d'expérience</div>
+					<div class="stat-label">{$t('aboutExperience')}</div>
 				</div>
 				<div class="stat-item">
 					<div class="stat-number">100+</div>
-					<div class="stat-label">Projets réalisés</div>
+					<div class="stat-label">{$t('aboutProjects')}</div>
 				</div>
 				<div class="stat-item">
 					<div class="stat-number">50+</div>
-					<div class="stat-label">Entreprises accompagnées</div>
+					<div class="stat-label">{$t('aboutCompanies')}</div>
 				</div>
 			</div>
 		</div>
 		<div class="fade-in" style="margin-top: 60px;">
-			<p style="font-size: 1.1rem; text-align: center; color: #666;">J'ai eu l'opportunité de développer des outils innovants et de former des équipes dans des groupes de premier plan comme <strong>Samsung, Stellantis, AFD, Greenpeace, Blablacar</strong>, ainsi que pour des institutions publiques majeures comme les Tribunaux de Commerce de France.</p>
+			<p style="font-size: 1.1rem; text-align: center; color: #666;">{@html $t('aboutClientsText')}</p>
 		</div>
 	</div>
 </section>
 
 <section id="services" class="services">
 	<div class="container">
-		<h2 class="section-title fade-in">Nos Prestations</h2>
+		<h2 class="section-title fade-in">{$t('servicesTitle')}</h2>
 		<div class="services-grid">
 			<div class="service-card fade-in card-3d">
 				<div class="service-icon">⚡</div>
-				<h3 class="service-title">Développement & Intégration de Solutions IA</h3>
-				<p class="service-description">Prototypage rapide, développement de solutions personnalisées (chatbots, systèmes d'aide à la décision, automatisation, agents, RAG, API, MCP, fine tuning) et intégration aux systèmes existants.</p>
+				<h3 class="service-title">{$t('serviceAiTitle')}</h3>
+				<p class="service-description">{$t('serviceAiDesc')}</p>
 			</div>
 			<div class="service-card fade-in card-3d">
 				<div class="service-icon">🎓</div>
-				<h3 class="service-title">Formations IA Sur-Mesure</h3>
-				<p class="service-description">Montée en compétence ciblée avec des formations 100% adaptées à votre secteur, vos équipes, vos objectifs spécifiques et votre profil (décideurs, techniciens, developpeurs, consultants...). Approche pragmatique avec ateliers pratiques.</p>
+				<h3 class="service-title">{$t('serviceTrainingTitle')}</h3>
+				<p class="service-description">{$t('serviceTrainingDesc')}</p>
 			</div>
 			<div class="service-card fade-in card-3d">
 				<div class="service-icon">🎯</div>
-				<h3 class="service-title">Accompagnement Stratégique</h3>
-				<p class="service-description">Diagnostic, identification d'opportunités, cadrage de projets et feuille de route. Conseils sur les évolutions technologiques et meilleures pratiques</p>
+				<h3 class="service-title">{$t('serviceConsultingTitle')}</h3>
+				<p class="service-description">{$t('serviceConsultingDesc')}</p>
 			</div>
 		</div>
 	</div>
@@ -127,31 +130,31 @@
 
 <section id="benefits" class="benefits">
 	<div class="container">
-		<h2 class="section-title fade-in">Les Bénéfices Concrets</h2>
+		<h2 class="section-title fade-in">{$t('benefitsTitle')}</h2>
 		<div class="benefits-grid">
 			<div class="benefit-item fade-in">
-				<h4 class="benefit-title">Productivité Accrue</h4>
-				<p>Automatisation de tâches répétitives et chronophages, libérant vos équipes pour des missions à plus forte valeur ajoutée.</p>
+				<h4 class="benefit-title">{$t('benefitProductivityTitle')}</h4>
+				<p>{$t('benefitProductivityDesc')}</p>
 			</div>
 			<div class="benefit-item fade-in">
-				<h4 class="benefit-title">Optimisation des Fonctions Clés</h4>
-				<p>Amélioration significative de la performance dans les opérations client, le marketing, l'ingénierie logicielle et la R&D.</p>
+				<h4 class="benefit-title">{$t('benefitOptimizationTitle')}</h4>
+				<p>{$t('benefitOptimizationDesc')}</p>
 			</div>
 			<div class="benefit-item fade-in">
-				<h4 class="benefit-title">Création de Contenu Optimisée</h4>
-				<p>Génération rapide de rapports, emails, documents marketing et contenus techniques de qualité.</p>
+				<h4 class="benefit-title">{$t('benefitContentTitle')}</h4>
+				<p>{$t('benefitContentDesc')}</p>
 			</div>
 			<div class="benefit-item fade-in">
-				<h4 class="benefit-title">Interactions Client Améliorées</h4>
-				<p>Assistants virtuels sophistiqués et analyse fine des retours clients pour une expérience optimisée.</p>
+				<h4 class="benefit-title">{$t('benefitInteractionTitle')}</h4>
+				<p>{$t('benefitInteractionDesc')}</p>
 			</div>
 			<div class="benefit-item fade-in">
-				<h4 class="benefit-title">Innovation Facilitée</h4>
-				<p>Utilisation de l'IA générative pour le brainstorming et la résolution de problèmes complexes.</p>
+				<h4 class="benefit-title">{$t('benefitInnovationTitle')}</h4>
+				<p>{$t('benefitInnovationDesc')}</p>
 			</div>
 			<div class="benefit-item fade-in">
-				<h4 class="benefit-title">Knowledge Management Intelligent</h4>
-				<p>Transformation de vos données en insights actionnables et systèmes de gestion des connaissances dynamiques.</p>
+				<h4 class="benefit-title">{$t('benefitKnowledgeTitle')}</h4>
+				<p>{$t('benefitKnowledgeDesc')}</p>
 			</div>
 		</div>
 	</div>
@@ -159,15 +162,15 @@
 
 <section id="testimonials" class="testimonials">
 	<div class="container">
-		<h2 class="section-title fade-in">Témoignages Clients</h2>
+		<h2 class="section-title fade-in">{$t('testimonialsTitle')}</h2>
 		<div class="testimonial-grid">
 			<div class="testimonial fade-in">
-				<p class="testimonial-text">Grâce à la formation et à son accompagnement pertinent, nous avons pu déployer un chatbot en moins d'un mois. Cela a permis de réduire notre charge de travail au service client de 40%, tout en améliorant la satisfaction de nos utilisateurs.</p>
-				<p class="testimonial-author">— Responsable Service Client</p>
+				<p class="testimonial-text">{$t('testimonial1')}</p>
+				<p class="testimonial-author">{$t('testimonial1Author')}</p>
 			</div>
 			<div class="testimonial fade-in">
-				<p class="testimonial-text">L'expertise de Jean nous a permis de développer un outil d'analyse de données qui a transformé notre approche. Nous traitons désormais des volumes importants, en plusieurs langues, avec une équipe réduite, au service de centaines de collaborateurs.</p>
-				<p class="testimonial-author">— Senior Insights Manager, Greenpeace</p>
+				<p class="testimonial-text">{$t('testimonial2')}</p>
+				<p class="testimonial-author">{$t('testimonial2Author')}</p>
 			</div>
 		</div>
 	</div>
@@ -175,16 +178,16 @@
 
 <section id="contact" class="contact">
 	<div class="container">
-		<h2 class="section-title fade-in">Prêt à Transformer Votre Entreprise ?</h2>
+		<h2 class="section-title fade-in">{$t('contactTitle')}</h2>
 		<div class="contact-content fade-in">
-			<p class="contact-text">L'intelligence artificielle est la nouvelle frontière de la productivité. Ensemble, faisons-en un atout majeur de votre stratégie.</p>
-			<a href="mailto:jean.ml.solutions@gmail.com" class="contact-button">Discutons de votre projet</a>
+			<p class="contact-text">{$t('contactText')}</p>
+			<a href="mailto:jean.ml.solutions@gmail.com" class="contact-button">{$t('contactButton')}</a>
 		</div>
 	</div>
 </section>
 
 <footer>
 	<div class="container">
-		<p>&copy; 2025 Jean Mallol - Expert IA & Formateur. Tous droits réservés.</p>
+		<p>{$t('footerText')}</p>
 	</div>
 </footer>
