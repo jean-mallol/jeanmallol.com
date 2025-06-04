@@ -3,6 +3,9 @@
 	import SEO from '$lib/components/SEO.svelte';
 	import FadeIn from '$lib/components/FadeIn.svelte';
 	import LanguageSelector from '$lib/components/LanguageSelector.svelte';
+	import ServiceAiIcon from '$lib/components/icons/ServiceAiIcon.svelte';
+	import ServiceTrainingIcon from '$lib/components/icons/ServiceTrainingIcon.svelte';
+	import ServiceConsultingIcon from '$lib/components/icons/ServiceConsultingIcon.svelte';
 	import { t } from '$lib/i18n';
 	import type { PageData } from './$types';
 	
@@ -110,17 +113,23 @@
 		<h2 class="section-title fade-in">{$t('servicesTitle')}</h2>
 		<div class="services-grid">
 			<div class="service-card fade-in card-3d">
-				<div class="service-icon">⚡</div>
+				<div class="service-icon">
+					<ServiceAiIcon />
+				</div>
 				<h3 class="service-title">{$t('serviceAiTitle')}</h3>
 				<p class="service-description">{$t('serviceAiDesc')}</p>
 			</div>
 			<div class="service-card fade-in card-3d">
-				<div class="service-icon">🎓</div>
+				<div class="service-icon">
+					<ServiceTrainingIcon />
+				</div>
 				<h3 class="service-title">{$t('serviceTrainingTitle')}</h3>
 				<p class="service-description">{$t('serviceTrainingDesc')}</p>
 			</div>
 			<div class="service-card fade-in card-3d">
-				<div class="service-icon">🎯</div>
+				<div class="service-icon">
+					<ServiceConsultingIcon />
+				</div>
 				<h3 class="service-title">{$t('serviceConsultingTitle')}</h3>
 				<p class="service-description">{$t('serviceConsultingDesc')}</p>
 			</div>
